@@ -12,6 +12,8 @@ export class HomeComponent {
   name = "Maruka";
   idButton = "ashuashua"
   deveMostrarTitulo = false;
+  listItems = ["eins", "zwei", "drei"]
+
 
  // atualizaBooleano(valor: boolean){
  //   this.meuBooleano = valor;

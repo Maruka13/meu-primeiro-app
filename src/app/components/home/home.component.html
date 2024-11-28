@@ -11,11 +11,11 @@
     <h1>Não foi verdadeiro</h1>
 }
 
-<!-- para versões anteriores como 12/13 
+<!-- para versões anteriores como 12/13 (tbm funciona hj)
  
     <h1 *ngIf="deveMostrarTitulo">Meu Título</h1>
 
-    e no home.components.ts importar o CommonModule:
+    e no "home.components.ts" importar o CommonModule:
     @Component({
         selector: 'app-home',
         standalone: true,
@@ -23,5 +23,14 @@
         templateUrl: './home.component.html',
         styleUrl: './home.component.css'
     })
+-->
+
+@for (item of listItems; track item) {
+    <p>{{ item }}</p>
+}
+
+<!-- old version
+ 
+    <p *ngFor="let item of listItems">{{ item }}</p>
 
 -->
