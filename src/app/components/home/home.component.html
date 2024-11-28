@@ -1,4 +1,10 @@
-<p>Oi meu chapa {{ name }}</p>
+<h1>
+    {{ teste }}
+</h1>
+
+<button (click)="submit()">clique</button>
+
+<!-- <p>Oi meu chapa {{ name }}</p>
 
 <button (click)="submit()">clique</button>
 
@@ -11,7 +17,7 @@
     <h1>Não foi verdadeiro</h1>
 }
 
-<!-- para versões anteriores como 12/13 (tbm funciona hj)
+     para versões anteriores como 12/13 (tbm funciona hj)
  
     <h1 *ngIf="deveMostrarTitulo">Meu Título</h1>
 
@@ -23,18 +29,17 @@
         templateUrl: './home.component.html',
         styleUrl: './home.component.css'
     })
--->
+
 
 @for (item of listItems; track item) {
     <p>{{ item }}</p>
 }
 
-<!-- old version
+     old version
  
     <p *ngFor="let item of listItems">{{ item }}</p>
 
+
 -->
 
-<h1>
-    {{ teste }}
-</h1>
+
