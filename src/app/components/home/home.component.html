@@ -10,3 +10,18 @@
 @else {
     <h1>Não foi verdadeiro</h1>
 }
+
+<!-- para versões anteriores como 12/13 
+ 
+    <h1 *ngIf="deveMostrarTitulo">Meu Título</h1>
+
+    e no home.components.ts importar o CommonModule:
+    @Component({
+        selector: 'app-home',
+        standalone: true,
+         imports: [CommonModule],
+        templateUrl: './home.component.html',
+        styleUrl: './home.component.css'
+    })
+
+-->
