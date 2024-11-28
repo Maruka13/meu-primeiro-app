@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { EnviaFormularioService } from '../../services/envia-formulario.service';
 import { inject } from '@angular/core';
 
@@ -17,6 +17,8 @@ export class HomeComponent {
   idButton = "ashuashua";
   deveMostrarTitulo = false;
   listItems = ["eins", "zwei", "drei"];
+
+  @Input("name") teste!: string;
 
 
  // atualizaBooleano(valor: boolean){
