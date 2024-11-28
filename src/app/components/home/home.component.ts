@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EnviaFormularioService } from '../../services/envia-formulario.service';
 
 @Component({
   selector: 'app-home',
@@ -9,17 +10,19 @@ import { Component } from '@angular/core';
 })
 
 export class HomeComponent {
+  private enviaFormularioService = inject(EnviaFormularioService);
   name = "Maruka";
-  idButton = "ashuashua"
+  idButton = "ashuashua";
   deveMostrarTitulo = false;
-  listItems = ["eins", "zwei", "drei"]
+  listItems = ["eins", "zwei", "drei"];
 
 
  // atualizaBooleano(valor: boolean){
  //   this.meuBooleano = valor;
  // }
 
-  submit(event: any){
-    console.log(event)
+  submit(){
+    this.enviaFormularioService.enviaInfoParaBackEnd("Enviando Informação")
   }
+
 }
