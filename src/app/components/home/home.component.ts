@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   name = "Maruka";
   idButton = "ashuashua"
+  deveMostrarTitulo = false;
 
  // atualizaBooleano(valor: boolean){
  //   this.meuBooleano = valor;

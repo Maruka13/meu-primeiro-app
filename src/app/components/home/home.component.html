@@ -1,3 +1,12 @@
 <p>Oi meu chapa {{ name }}</p>
 
 <button (click)="submit($event)">clique</button>
+
+@if(deveMostrarTitulo){
+    <h1>Meu Título</h1>
+} @else if (name == "Maruka") {
+    <h1>Meu Título para Maruka</h1>
+}
+@else {
+    <h1>Não foi verdadeiro</h1>
+}
