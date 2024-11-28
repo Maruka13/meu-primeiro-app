@@ -9,10 +9,14 @@ import { Component } from '@angular/core';
 })
 
 export class HomeComponent {
-  meuBooleano = false;
+  name = "Maruka";
+  idButton = "ashuashua"
 
-  atualizaBooleano(valor: boolean){
-    this.meuBooleano = valor;
+ // atualizaBooleano(valor: boolean){
+ //   this.meuBooleano = valor;
+ // }
+
+  submit(event: any){
+    console.log(event)
   }
-
 }
