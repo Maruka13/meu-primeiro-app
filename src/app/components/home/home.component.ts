@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { EnviaFormularioService } from '../../services/envia-formulario.service';
+import { inject } from '@angular/core';
+
 
 @Component({
   selector: 'app-home',
